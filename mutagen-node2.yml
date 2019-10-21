@@ -1,0 +1,14 @@
+sync:
+  vagrant-mutagen-project-node2:
+    alpha: '.'
+    beta: 'vagrant-mutagen-project-node2:/home/vagrant/vagrant-mutagen-project'
+    mode: 'two-way-resolved'
+    flushOnCreate: true
+    ignore:
+      vcs: true
+    configurationBeta:
+      permissions:
+        defaultOwner: vagrant
+        defaultGroup: vagrant
+        defaultFileMode: 644
+        defaultDirectoryMode: 755
