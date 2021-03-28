@@ -16,8 +16,7 @@ module VagrantPlugins
 
         def call(env)
           if is_enabled
-            @ui.info "[vagrant-mutagen-project] Checking for SSH config entries"
-            add_config_entries
+            add_machine_to_ssh_config
             start_project
           end
 
