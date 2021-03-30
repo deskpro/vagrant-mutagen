@@ -17,9 +17,7 @@ module VagrantPlugins
         def call(env)
           if is_enabled && is_destroy_confirmed(env)
             terminate_project
-
-            @ui.info "[vagrant-mutagen-project] Removing SSH config entry"
-            remove_config_entries
+            remove_machine_from_ssh_config
           end
 
           @app.call(env)
