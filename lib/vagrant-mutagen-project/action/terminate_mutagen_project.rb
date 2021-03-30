@@ -1,5 +1,5 @@
-require_relative "../mutagen"
-require_relative "../ssh_config"
+require_relative '../mutagen'
+require_relative '../ssh_config'
 
 module VagrantPlugins
   module MutagenProject
@@ -15,7 +15,7 @@ module VagrantPlugins
         end
 
         def call(env)
-          if is_enabled && is_destroy_confirmed(env)
+          if enabled? && destroy_confirmed?(env)
             terminate_project
             remove_machine_from_ssh_config
           end
@@ -23,7 +23,7 @@ module VagrantPlugins
           @app.call(env)
         end
 
-        def is_destroy_confirmed(env)
+        def destroy_confirmed?(env)
           env[:force_confirm_destroy_result]
         end
       end

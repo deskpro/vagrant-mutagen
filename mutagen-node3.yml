@@ -6,6 +6,8 @@ sync:
     flushOnCreate: true
     ignore:
       vcs: true
+      paths:
+          - '*.yml.lock'
     configurationBeta:
       permissions:
         defaultOwner: vagrant

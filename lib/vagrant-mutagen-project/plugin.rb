@@ -1,8 +1,8 @@
-require "vagrant-mutagen-project/action/start_mutagen_project"
-require "vagrant-mutagen-project/action/pause_mutagen_project"
-require "vagrant-mutagen-project/action/resume_mutagen_project"
-require "vagrant-mutagen-project/action/terminate_mutagen_project"
-require "yaml"
+require 'vagrant-mutagen-project/action/start_mutagen_project'
+require 'vagrant-mutagen-project/action/pause_mutagen_project'
+require 'vagrant-mutagen-project/action/resume_mutagen_project'
+require 'vagrant-mutagen-project/action/terminate_mutagen_project'
+require 'yaml'
 
 module VagrantPlugins
   module MutagenProject

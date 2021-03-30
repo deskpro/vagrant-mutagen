@@ -5,6 +5,8 @@
 .config
 .yardoc
 .vagrant
+mutagen-node*.yml.lock
+Gemfile.lock
 InstalledFiles
 _yardoc
 coverage
