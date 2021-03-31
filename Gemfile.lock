@@ -28,7 +28,7 @@ GIT
 PATH
   remote: .
   specs:
-    vagrant-mutagen-project (0.2)
+    vagrant-mutagen-project (0.3)
 
 GEM
   remote: https://rubygems.org/
