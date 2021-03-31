@@ -14,7 +14,7 @@ module VagrantPlugins
 
       def finalize!
         @orchestrate = false if @orchestrate == UNSET_VALUE
-        @project_file = "mutagen.yml" if @project_file == UNSET_VALUE
+        @project_file = 'mutagen.yml' if @project_file == UNSET_VALUE
       end
     end
   end

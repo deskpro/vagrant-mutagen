@@ -9,7 +9,7 @@ module VagrantPlugins
       SSH_CONFIG_DIR = File.dirname(SSH_CONFIG_PATH)
 
       def add_machine_to_ssh_config
-        @ui.info '[vagrant-mutagen-project] Checking for SSH config entries'
+        @ui.info '[vagrant-mutagen-project] Adding machine to SSH config'
 
         # Ensure the full path exists
         FileUtils.mkdir_p(SSH_CONFIG_DIR)
@@ -34,7 +34,7 @@ module VagrantPlugins
       end
 
       def remove_machine_from_ssh_config
-        @ui.info '[vagrant-mutagen-project] Removing SSH config entry'
+        @ui.info '[vagrant-mutagen-project] Removing machine from SSH config'
 
         if File.exists?(SSH_CONFIG_PATH)
           File.open(SSH_CONFIG_PATH, File::LOCK_EX | File::RDWR) do |file|

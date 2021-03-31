@@ -1,5 +1,5 @@
-require_relative "../mutagen"
-require_relative "../ssh_config"
+require_relative '../mutagen'
+require_relative '../ssh_config'
 
 module VagrantPlugins
   module MutagenProject
@@ -15,7 +15,7 @@ module VagrantPlugins
         end
 
         def call(env)
-          if is_enabled
+          if enabled?
             add_machine_to_ssh_config
             start_project
           end

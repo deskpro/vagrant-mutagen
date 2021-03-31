@@ -1,4 +1,4 @@
-require_relative "../mutagen"
+require_relative '../mutagen'
 
 module VagrantPlugins
   module MutagenProject
@@ -13,8 +13,8 @@ module VagrantPlugins
         end
 
         def call(env)
-          if is_enabled
-            @ui.info "[vagrant-mutagen-project] Resuming Mutagen sync"
+          if enabled?
+            @ui.info '[vagrant-mutagen-project] Resuming Mutagen sync'
             resume_project
           end
 
